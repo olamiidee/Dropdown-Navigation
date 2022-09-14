@@ -1,0 +1,58 @@
+body {
+  background-color: hsl(0, 0%, 98%);
+}
+
+p {
+  color: hsl(0, 0%, 41%);
+  font-size: 18px;
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+nav {
+  color: hsl(0, 0%, 41%);
+}
+
+nav a:hover {
+  color: black;
+}
+
+nav button:hover {
+  color: black;
+}
+
+.content1,
+.content2 {
+  border-radius: 10px;
+  padding: 20px;
+  display: none;
+  position: absolute;
+  right: 10px;
+  background-color: #fff;
+  z-index: 2;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* .dropdown:hover .content {
+  display: block;
+} */
+
+.content1 a,
+.content2 a {
+  color: hsl(0, 0%, 41%);
+  padding: 5px 5px;
+  display: flex;
+  align-items: center;
+}
+
+.content1 img,
+.content2 img {
+  margin-right: 10px;
+}
