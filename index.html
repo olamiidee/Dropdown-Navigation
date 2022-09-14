@@ -18,7 +18,7 @@
   <body>
     <!-- Global Container -->
 
-    <div class="container w-full mx-auto">
+    <div class="container w-full mx-auto overflow-x-hidden">
       <!-- Navbar -->
 
       <nav class="hidden p-6 lg:flex items-center justify-between">
@@ -113,7 +113,11 @@
           <img src="./images/image-hero-desktop.png" id="hero-img" />
         </div>
         <div class="mb-8 lg:hidden container w-full mx-auto">
-          <img src="./images/image-hero-mobile.png" id="hero-img" />
+          <img
+            src="./images/image-hero-mobile.png"
+            id="hero-img"
+            class="max-w-md"
+          />
         </div>
       </div>
     </div>
