@@ -21,20 +21,20 @@
     <div class="container w-full mx-auto overflow-x-hidden">
       <!-- Navbar -->
 
-      <nav class="hidden p-6 lg:flex items-center justify-between">
+      <nav class=" p-6 flex items-center justify-between">
         <div class="flex items-center space-x-20">
           <!-- logo -->
           <a><img src="/images/logo.svg" alt="logo" /></a>
 
           <!-- Menus -->
           <div
-            class="flex items-center justify-between space-x-12 cursor-pointer"
+            class="hidden lg:flex items-center justify-between space-x-12 cursor-pointer"
           >
             <!-- first menu -->
             <div class="relative inline-block dropdown1">
               <a class="flex items-center"
                 >Features
-                <img class="pl-2 arrow1" src="/images/icon-arrow-up.svg"
+                <img class="pl-2 arrow1" src="/images/icon-arrow-down.svg"
               /></a>
               <!-- dropdown content -->
               <div class="content1 w-40 text-start">
@@ -51,7 +51,7 @@
               <a class="flex items-center"
                 >Company<img
                   class="pl-2 arrow2"
-                  src="/images/icon-arrow-up.svg"
+                  src="/images/icon-arrow-down.svg"
               /></a>
               <!-- dropdown content -->
               <div class="content2 w-32">
@@ -67,7 +67,7 @@
           </div>
         </div>
 
-        <div class="space-x-8">
+        <div class="space-x-8 hidden lg:block">
           <button class="border-none outline-none bg-transparent">Login</button>
           <button
             class="border-2 border-gray-300 outline-none bg-transparent px-4 py-2 rounded-xl hover:border-black hover:text-black"
@@ -75,7 +75,56 @@
             Register
           </button>
         </div>
+
+        <!-- Hamburger Button -->
+        <div class="lg:hidden">
+          <button
+            class="z-40 lg:hidden focus:outline-none block hamburger"
+            id="menu-btn"
+            type="button"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
       </nav>
+
+      <!-- Mobile Menu -->
+      <div class="  w-full h-screen">
+        <div
+          class="absolute top-0 right-0 bottom-0 flex-col self-end h-screen w-1/2 py-1 pt-20 pl-6 text-md text-white bg-black z-30 hidden "id="menu"
+        >
+        <!-- Menus -->
+          <div class="flex flex-col space-y-4">
+            <!-- First Menu -->
+            <div class="relative inline-block dropdown3"><a href="#" class="flex items-center">Features<img class="pl-2 arrow3" src="/images/icon-arrow-down.svg"></a>
+              <!-- dropdown content -->
+              <div class="content3 w-40 text-start">
+                <a href="#"><img src="/images/icon-todo.svg" />Todo List</a>
+                <a href="#"><img src="/images/icon-calendar.svg" />Calender</a>
+                <a href="#"
+                  ><img src="/images/icon-reminders.svg" />Reminders</a
+                >
+                <a href="#"><img src="/images/icon-planning.svg" />Planning</a>
+              </div>
+            </div>
+            <!-- Second Menu -->
+            <div class="relative inline-block dropdown4"><a href="#" class="flex items-center">Company<img class="pl-2 arrow4" src="/images/icon-arrow-down.svg"></a>
+              <!-- dropdown content -->
+              <div class="content4 w-32">
+                <a href="#">History</a>
+                <a href="#">Our Team</a>
+                <a href="#">Blog</a>
+              </div>
+                            
+            </div>
+             <!-- Third Menu-->
+            <a href="#">Careers</a>
+            <!-- Fourth Menu -->
+            <a href="#">About</a>
+          </div>
+        </div>
 
       <!-- Hero Section -->
 
@@ -100,10 +149,11 @@
           </button>
 
           <div
-            class="flex items-center justify-between pt-4 lg:pt-12 lg:max-w-md"
+            class="mx-auto flex items-center justify-between pt-4 lg:pt-12 lg:max-w-md"
           >
-            <img src="./images/client-audiophile.svg" alt="" />
             <img src="./images/client-databiz.svg" alt="" />
+            <img src="./images/client-audiophile.svg" alt="" />
+
             <img src="./images/client-maker.svg" alt="" />
             <img src="./images/client-meet.svg" alt="" />
           </div>
@@ -116,7 +166,7 @@
           <img
             src="./images/image-hero-mobile.png"
             id="hero-img"
-            class="max-w-md mx-auto"
+            class="max-w-sm mx-auto"
           />
         </div>
       </div>
